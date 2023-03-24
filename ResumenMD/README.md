@@ -47,6 +47,34 @@ JavaScript. Pero, existen otros métodos que pueden ser usados con la misma fina
 
 ### Escuchando eventos
 
+Genero una nueva rama:
+
+![img_9.png](img_9.png)
+
+Creo y hago link para archivo `script.js` 
+
+Voy a escuchar al botón agregar con el _atributo_ `data` la referencia o nombre que agregue luego la decido yo.
+
+### Capturando el valor del input
+
+Dentro de la function que escucha al botón ==> escucho al input dentro de la función porque quiero sus datos luego de 
+hacer click, a partir de ahí capturo su contenido.
+
+### Comportamiento del formulario
+
+Con el método `preventDefault()` evito que se recargue la pantalla cada vez que cargo un dato en el formulario.
+en este caso nombré al parámetro de la función `parameterEvento` , pero No limpia el formulario!!!
+
+![img_10.png](img_10.png)
+
+Luego a la función la transforma en arrow function.
+
+![img_11.png](img_11.png)
+
+El próximo cambio importante es que transforma la arrow function en el contenido de otra función para mejorar la sintaxis.
+
+![img_12.png](img_12.png)
+
 
 
 

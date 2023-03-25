@@ -76,8 +76,59 @@ El próximo cambio importante es que transforma la arrow function en el contenid
 ![img_12.png](img_12.png)
 
 
+## Clase 3 
 
+![img_13.png](img_13.png)
 
+Para hacer que los datos de borren del form al hacer input hago lo siguiente:
+
+* Almaceno el input en una variable `const value = input.value;`
+* Declaro que quede vacío --- de esta manera guarda una vez pero vacía el form.
+
+![img_14.png](img_14.png)
+
+### Creo la nueva tarea en la lista
+
+En el HTML asigno un nuevo `data-` para manejar la creación de tareas.
+
+![img_15.png](img_15.png)
+
+* Luego lo capturo en javascript en una constante: `const task = document.querySelector("[data-task]");`
+* vuelvo al HTML y corto el contenido de la etiqueta nombrada `data-task`
+* Creo una nueva constante para el contenido recien cortado y manejarlo dentro de Js. va a ser igual a una propiedad 
+que tiene JavaScript que se llama `template strings`.
+* Dentro de la constante hago una llamada a una variable de js para insertarla utilizo `${ }`
+
+![img_16.png](img_16.png)
+
+Con esto al hacer click capture el contenido e imprime el código insertado de la etiqueta html en js
+
+![img_17.png](img_17.png) -- ![img_18.png](img_18.png)
+
+Falta que ahora el código de etiqueta se vuelva a insertar dentro del html para generar UNA nueva etiquetas lo hago con 
+la propiedad `.innerHTML` TODAVÍA NO LAS GUARDA
+
+![img_19.png](img_19.png)
+
+### Creando elementos
+
+Habiendo manipulado el DOM ahora el profesor muestra como hacer cada tarjeta dinámica para eso modifica aún más el proyecto.
+
+![img_20.png](img_20.png)
+
+Al elemento padre Ul le agregué un `data-` para manipularlo, creo en js con`const task = document.createElement("li");`
+ _creo un list item para agregar las tarjetas_.
+
+![img_21.png](img_21.png)
+
+Con la sintaxis `.appendChild` creo un hijo a la ul
+
+![img_22.png](img_22.png)
+
+lo agrega sin formato para agregar la clase css debo usar: 
+* `task.classList.add("card");` // con esto agrego la clase a la tarea.
+
+ ![img_24.png](img_24.png) -- ![img_23.png](img_23.png)
 
 
 

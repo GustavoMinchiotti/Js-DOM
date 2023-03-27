@@ -130,18 +130,89 @@ lo agrega sin formato para agregar la clase css debo usar:
 
  ![img_24.png](img_24.png) -- ![img_23.png](img_23.png)
 
+Todos los elementos en nuestro árbol de DOM son nodos y todos los nodos pueden ser accedidos vía JavaScript. 
+Los nodos pueden ser eliminados, creados o modificados. Durante el curso utilizamos el método appendChild que siempre 
+es implementado al final del nodo, para colocar un nodo hijo dentro del nodo padre.
+
+Existen otros métodos que podemos utilizar para manipular nodos:
+
+* insertBefore(padre, hijo): Coloca un nodo antes del otro
+* replaceChild(elemento1, elemento2): Sustituye el nodo del elemento 1 por el nodo del elemento 2
+* removeChild(elemento): Remueve un nodo del árbol
+
+**Lo que aprendimos en esta aula:**
+
+* Utilizar template strings
+* Colocar un elemento hijo dentro del elemento padre utilizando el método appendChild
+* Crear elementos utilizando el método createElement
+
+### Creando el botón concluir / chequeado
+
+### Clase-04 ahora ya no me sirve mezclar una string con tantos elementos html asi que debo crear uno a uno
+
+Para hacer dinámico al botón de check list debo crearlo en js también, lo hago a través de una función.
+
+Dentro de la misma: 
+1. Creo la etiqueta "i"
+2. Le asigno las clases =  `i.classList.add("far");`
+3. Le asigno las clases =  `i.classList.add("fa-check-square");`
+4. Le asigno las clases =  `i.classList.add("icon");`
+5. Las debo separar una a una porque si no da error.
+6. Retorno "i" 
 
 
+Reemplazo dentro la etiqueta li a la vieja etiqueta i con la función nueva.
 
+![img_25.png](img_25.png) ----- ![img_26.png](img_26.png)
 
+![img_27.png](img_27.png)
 
+Clase-04 ahora ya no me sirve mezclar una `string` con tantos elementos html asi que debo crear uno a uno 
+comienzo a crear las etiquetas dinámicamente y voy borrando la string.
 
+Creo el div y le inserto la etiqueta i
 
+![img_28.png](img_28.png)
 
+Para eliminar de la string a span la creo dinámicamente:
 
+![img_29.png](img_29.png)
 
+Ahora borro la parte de la string con span:
 
+![img_30.png](img_30.png)
 
+## IIFE Immediately invoked function expression 
+
+Son funciones que en cuanto se declaran, se ejecutan.
+
+**_Para dar más seguridad a nuestro código._**
+
+Una IIFE (Immediately Invoked Function Expression) constituye un patrón de diseño usado comúnmente en Javascript 
+(por bibliotecas, como jQuery, Backbone.js, Modernizr, y muchas más) para encapsular un bloque de código dentro de un 
+ámbito local.
+
+**Lo que aprendimos en esta aula:**
+
+* Agregar la clase CSS utilizando el método toggle
+* Utilizar el atributo parentElement para subir un elemento en el árbol del DOM
+* Encontrar el objetivo del evento utilizando la propiedad target
+* Utilizar IIFE
+
+## Clase 5
+Trabajamos en el botón de borrar con la misma logica del check
+
+## Módulos
+
+Digo en HTML que el tipo de script va a ser de módulos
+ 
+![img_31.png](img_31.png) 
+
+Creo la exportación en el archivo módulo y la importación en el script principal.
+
+![img_34.png](img_34.png)
+
+![img_35.png](img_35.png)
 
 
 
